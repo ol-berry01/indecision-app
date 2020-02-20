@@ -1,0 +1,27 @@
+.add-option {
+    display: flex; 
+
+    &__input {
+        background: $dark-blue;
+        color: $off-white;
+        padding: $sm-size;
+        border: none;
+        border-bottom: 0.3rem solid darken($dark-blue, 10%);
+        flex-grow: 1;
+
+        @media(max-width: 45rem) {
+            margin: $sm-size;
+        }
+    }
+
+    &-error {
+        color: $off-white;
+        font-style: italic;
+        margin: $m-size 0;
+        padding: 0 $m-size;
+    }
+
+    @media(max-width: $mobile-breakpoint) {
+        flex-direction: column;
+    }
+}
